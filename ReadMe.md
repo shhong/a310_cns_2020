@@ -10,7 +10,7 @@ We will use [NEURON](https://www.neuron.yale.edu/neuron/) 7.7.2 with Python 3.7.
 
 ## Schedule of modeling classes and homework dues
 
-### [Modeling class introduction] — Jan 20, 2020
+### [Modeling class introduction](https://github.com/shhong/a310_cns_2020/tree/master/class_intro) — Jan 20, 2020
 
 In this intro class, we will cover some basics of Python programming language and model building in NEURON.
 
