@@ -39,10 +39,15 @@
 
 1. The size of the desktop is 1024x768. If you want to change this, change `VNC_RESOLUTION=1024x768` in the starting command to whichever size you want.
 2. In some systems, `0.0.0.0` may not be accessible. In this case replace `0.0.0.0` by `localhost`.
-3. If the kernel does not start due to a permission issue, please try
-   ```shell
-   docker run -it -p 8889:8889 -p 6901:6901 -e VNC_RESOLUTION=1024x768 -e JUPYTER_RUNTIME_DIR=/tmp -e JUPYTER_DATA_DIR=./ -v ${PWD}:/root/Documents shhongoist/a310_cns_2020
-   ```
+3. If the kernel does not start due to a permission issue, please add
+```
+-e JUPYTER_RUNTIME_DIR=/tmp -e JUPYTER_DATA_DIR=./
+```
+in the docker run command. So the whole thing is now
+```shell
+   
+docker run -it -p 8889:8889 -p 6901:6901 -e VNC_RESOLUTION=1024x768 -e JUPYTER_RUNTIME_DIR=/tmp -e JUPYTER_DATA_DIR=./ -v ${PWD}:/root/Documents shhongoist/a310_cns_2020
+```
 
 ---
 _Written by Sungho Hong, Computational Neuroscience Unit, Okinawa Institutes of Science and Technology_
