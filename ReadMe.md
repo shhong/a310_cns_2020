@@ -14,6 +14,9 @@ We will use [NEURON](https://www.neuron.yale.edu/neuron/) 7.7.2 with Python 3.7.
 
 In this intro class, we will cover some basics of Python programming language and model building in NEURON.
 
+### [Modeling class 1](https://github.com/shhong/a310_cns_2020/tree/master/class_1) — Feb 6, 2020
+
+In our first class, we will work learn how to do virtual current clamp experiments in NEURON. We will also work on driving a neuron with external synaptic stimuli.
 
 ---
 _Written by Sungho Hong, Computational Neuroscience Unit, Okinawa Institutes of Science and Technology_
