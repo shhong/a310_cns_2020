@@ -10,7 +10,7 @@ objectvar ocbox_, ocbox_list_, scene_, scene_list_
 load_file("pointman.hoc")
 }
 {
-dend1[859] ocbox_ = new PointProcessManager(0)
+dend1_1212 ocbox_ = new PointProcessManager(0)
 }
 {object_push(ocbox_)}
 {
@@ -20,7 +20,7 @@ ms[i].set("tau1", 0.1, 0)
 ms[i].set("tau2", 2, 0)
 ms[i].set("e", 0, 0)
 mt.select("Exp2Syn") i = mt.selected() maction(i)
-hoc_ac_ = 0
+hoc_ac_ = 0.75
 sec.sec move() d1.flip_to(0)
 }
 {object_pop() doNotify()}
@@ -37,7 +37,7 @@ objref ocbox_
 load_file("pointman.hoc")
 }
 {
-dend1[67] ocbox_ = new PointProcessManager(0)
+dend1_1211 ocbox_ = new PointProcessManager(0)
 }
 {object_push(ocbox_)}
 {
@@ -47,7 +47,7 @@ ms[i].set("tau1", 0.1, 0)
 ms[i].set("tau2", 2, 0)
 ms[i].set("e", 0, 0)
 mt.select("Exp2Syn") i = mt.selected() maction(i)
-hoc_ac_ = 0
+hoc_ac_ = 0.5
 sec.sec move() d1.flip_to(0)
 }
 {object_pop() doNotify()}
@@ -59,6 +59,8 @@ objref ocbox_
 //End PointProcessManager
 
 {
+v_init = -75
+tstop = 250
 save_window_ = new Graph(0)
 save_window_.size(0,tstop,v_init,v_init+1)
 scene_vector_[4] = save_window_
@@ -77,9 +79,7 @@ xvalue("Continue til","runStopAt", 1,"{continuerun(runStopAt) stoprun=1}", 1, 1 
 runStopIn = 1
 xvalue("Continue for","runStopIn", 1,"{continuerun(t + runStopIn) stoprun=1}", 1, 1 )
 xbutton("Single Step","steprun()")
-t = 250
 xvalue("t","t", 2 )
-tstop = 250
 xvalue("Tstop","tstop", 1,"tstop_changed()", 0, 1 )
 dt = 0.025
 xvalue("dt","dt", 1,"setdt()", 0, 1 )
