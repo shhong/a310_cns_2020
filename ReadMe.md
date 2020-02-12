@@ -16,7 +16,15 @@ In this intro class, we will cover some basics of Python programming language an
 
 ### [Modeling class 1](https://github.com/shhong/a310_cns_2020/tree/master/class_1) — Feb 6, 2020
 
-In our first class, we will work learn how to do virtual current clamp experiments in NEURON. We will also work on driving a neuron with external synaptic stimuli.
+In our first class, we will learn how to do virtual current clamp experiments in NEURON.
+
+### [Modeling class 2](https://github.com/shhong/a310_cns_2020/tree/master/class_2) — Feb 13, 2020
+
+In the second class, we will learn how  to connect external inputs to synapses in a neuron, making the first network simulation.
+
+### [*Homework 1](https://github.com/shhong/a310_cns_2020/tree/master/homework_1/Homework%201.ipynb) — Due: Feb 26, 2020
+
+
 
 ---
 _Written by Sungho Hong, Computational Neuroscience Unit, Okinawa Institutes of Science and Technology_
