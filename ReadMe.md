@@ -24,6 +24,7 @@ In the second class, we will learn how  to connect external inputs to synapses i
 
 ### [*Homework 1](https://github.com/shhong/a310_cns_2020/tree/master/homework_1/Homework%201.ipynb) — Due: Feb 26, 2020
 
+### [*Homework 2](https://github.com/shhong/a310_cns_2020/blob/master/homework_2/Homework%202.ipynb) - Due: Mar 27, 2020
 
 
 ---
