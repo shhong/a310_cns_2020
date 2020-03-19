@@ -22,7 +22,7 @@ In our first class, we will learn how to do virtual current clamp experiments in
 
 In the second class, we will learn how  to connect external inputs to synapses in a neuron, making the first network simulation.
 
-### Modeling class 3 - Mar 19, 2020
+### [Modeling class 3](https://github.com/shhong/a310_cns_2020/tree/master/class_3) - Mar 19, 2020
 
 In the third class, we will learn about how to make and use custom cellular mechanisms and also more about building network models.
 
