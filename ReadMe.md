@@ -26,7 +26,7 @@ In the second class, we will learn how  to connect external inputs to synapses i
 
 In the third class, we will learn about how to make and use custom cellular mechanisms and also more about building network models.
 
-### Modeling class 4 - Apr 13~~9~~, 2020
+### [Modeling class 4](https://github.com/shhong/a310_cns_2020/tree/master/class_4) - Apr 13~~9~~, 2020
 
 In the last class, we will discuss more about building neural network models and adding synaptic plasticity.
 
@@ -40,4 +40,4 @@ In the last class, we will discuss more about building neural network models and
 ---
 _Written by Sungho Hong, Computational Neuroscience Unit, Okinawa Institutes of Science and Technology_
 
-_January 2020
+_January 2020_
