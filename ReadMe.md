@@ -37,6 +37,8 @@ In the last class, we will discuss more about building neural network models and
 
 ### [*Homework 3](https://github.com/shhong/a310_cns_2020/blob/master/homework_3/Homework%203.ipynb) - Due: Apr 17, 2020
 
+### [*Homework 4](https://github.com/shhong/a310_cns_2020/blob/master/homework_4/Homework%204.ipynb) - Due: May 11, 2020
+
 ---
 _Written by Sungho Hong, Computational Neuroscience Unit, Okinawa Institutes of Science and Technology_
 
