@@ -103,8 +103,8 @@ class ParallelNetManager(NetManager):
     def spike_record(self, gid, thresh=0):
         if self.pc.gid_exists(gid):
             self.pc.spike_record(gid, self.spikevec, self.idvec)
-        else:
-            raise RuntimeError("Cell {} does not exist in the node {}.".format(gid, self.pc.id()))
+        # else:
+        #     raise RuntimeError("Cell {} does not exist in the node {}.".format(gid, self.pc.id()))
 
     def set_maxstep(self, n):
         self.maxstep = n
@@ -112,14 +112,15 @@ class ParallelNetManager(NetManager):
 
     def nc_append(self, src_gid, target_gid, synapse_id, weight, delay, thresh=0):
         if self.pc.gid_exists(target_gid):
+            # print('cell {} exists in node {} ... connecting {}'.format(target_gid, self.pc.id(), src_gid))
             target = self.pc.gid2cell(target_gid)
             syn = target.synlist[synapse_id]
             self.netcons[(src_gid, target_gid, synapse_id)] = self.pc.gid_connect(src_gid, syn)
             self.netcons[(src_gid, target_gid, synapse_id)].weight[0] = weight
             self.netcons[(src_gid, target_gid, synapse_id)].delay = delay
             self.netcons[(src_gid, target_gid, synapse_id)].threshold = thresh
-        else:
-            raise RuntimeError("Cell {} does not exist in the node {}.".format(target_gid, self.pc.id()))
+        # else:
+        #     raise RuntimeError("Cell {} does not exist in the node {}.".format(target_gid, self.pc.id()))
 
     def run(self):
         self.pc.psolve(h.tstop)
@@ -139,7 +140,7 @@ class ParallelNetManager(NetManager):
                     for (t, i) in zip(self.spikevec, self.idvec):
                         spk_file.write("{:.12f}, {:g}\n".format(t, i)) # timestamp, id
         self.pc.barrier()
-    
+
     def want_all_spikes(self, thresh=0):
         if self.maxstep < 0:
             self.set_maxstep(100)
